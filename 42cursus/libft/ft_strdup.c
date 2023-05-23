@@ -22,9 +22,10 @@ char	*ft_strdup(const char *s)
 	char	*sprime;
 
 	i = 0;
-	while (s[i])
-		i++;
-	sprime = malloc((i + 1) * sizeof(char *));
+	i = ft_strlen(s);
+	if (!s)
+		return ("");
+	sprime = malloc((i + 1) * sizeof(char));
 	if (!sprime)
 		return (NULL);
 	i = 0;
@@ -33,5 +34,6 @@ char	*ft_strdup(const char *s)
 		sprime[i] = s[i];
 		i++;
 	}
+	sprime[i] = '\0';
 	return (sprime);
 }

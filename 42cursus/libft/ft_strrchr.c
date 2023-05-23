@@ -20,9 +20,11 @@ char	*ft_strrchr(char *str, int searchedChar)
 	e = ft_strlen(str);
 	while (str[e - 1])
 	{
-		if (str[e] == searchedChar)
+		if (str[e] == (char)searchedChar)
 			return (&str[e]);
 		e--;
 	}
+	if ((char)searchedChar == str[e])
+		return (&str[e]);
 	return (NULL);
 }

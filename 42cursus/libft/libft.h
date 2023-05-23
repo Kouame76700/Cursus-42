@@ -6,7 +6,7 @@
 /*   By: tmichel <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 14:50:08 by tmichel           #+#    #+#             */
-/*   Updated: 2023/05/15 14:50:10 by tmichel          ###   ########.fr       */
+/*   Updated: 2023/05/23 20:41:36 by tmichel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 int		ft_isdigit(int c);
 int		ft_isascii(int c);
 size_t	ft_strlcpy(char *dst, const char *src, size_t size);
-
+int		ft_atoi(const char *str);
+char	*ft_strjoin(char const *s1, char const *s2);
+void	*ft_memchr(const void *memoryBlock, int searchedChar, size_t size);
+int		ft_tolower(int character);
+int		ft_isprint(int c);
 #endif

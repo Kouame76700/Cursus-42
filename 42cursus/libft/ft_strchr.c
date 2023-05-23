@@ -20,11 +20,11 @@ char	*ft_strchr(char *str, int searchedChar)
 	e = 0;
 	while (str[e])
 	{
-		if (str[e] == searchedChar)
+		if (str[e] == (char)searchedChar)
 			return (&str[e]);
 		e++;
 	}
-	if (searchedChar == str[e])
+	if ((char)searchedChar == str[e])
 		return (&str[e]);
 	return (NULL);
 }
